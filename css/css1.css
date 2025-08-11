@@ -1,3 +1,8 @@
+header{
+    padding: 10px 0px;
+    font-size: 1.5em;
+    text-align: center;
+}
 .main-header {
     display: flex;
     align-items: center;
@@ -45,39 +50,4 @@
     display: flex;
     align-items: center;
     gap: 10px;
-}
-
-.live-button {
-    background-color: #FF0000;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.search-container {
-    position: relative;
-}
-
-.search-input {
-    padding: 10px 40px 10px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.search-icon {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #4CAF50;
-}
-
-.profile-icon {
-    text-decoration: none;
-    color: #4CAF50;
 }
