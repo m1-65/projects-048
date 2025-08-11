@@ -21,8 +21,8 @@ header{
 }
 
 .logo-container img {
-    width: 60px;
-    height: 60px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
     border: 3px solid #333; /* สร้างกรอบสีดำรอบโลโก้ */
 }
@@ -40,6 +40,17 @@ header{
     text-decoration: none; /* ลบเส้นใต้ลิงก์ */
     color: #333;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 30px;
 }
-
+ul a {
+    border-style: solid;
+    border-width: thin;
+    border-color: #8FD9FB;
+    background-color: aqua;
+}
+section{
+    border-style: solid;
+    border-width: thin;
+    border-color: #8FD9FB;
+    background-color: aqua;
+}
