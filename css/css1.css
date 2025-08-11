@@ -18,6 +18,9 @@ header{
     justify-content: space-between; /* จัดโลโก้และเมนูให้อยู่คนละฝั่ง */
     align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
     padding: 20px 40px; /* กำหนดระยะห่างด้านใน */
+    border-style: solid;
+    border-width: medium;
+    border-color: #000000;
 }
 
 .logo-container img {
