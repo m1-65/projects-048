@@ -3,51 +3,43 @@ header{
     font-size: 1.5em;
     text-align: center;
 }
-.main-header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px; /* ปรับ padding ตามต้องการ */
-    background-color: #ffffff; /* หรือสีพื้นหลังอื่นๆ */
-    border-bottom: 1px solid #ddd; /* สร้างเส้นแบ่งด้านล่าง (ไม่บังคับ) */
-}
-
-.logo-link {
-    display: flex; /* ทำให้ลิงก์จัดกึ่งกลางรูปภาพ */
-}
-
-.logo-img {
-    height: 50px; /* กำหนดความสูงของโลโก้ */
-    width: auto; /* ปรับความกว้างอัตโนมัติ */
-}
-.main-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-bottom: 2px solid #ccc;
-}
-
-.menu-list {
-    list-style: none;
-    padding: 0;
+/* --- การตั้งค่าพื้นฐาน --- */
+* {
+    box-sizing: border-box;
     margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    padding: 0;
 }
 
-.menu-item {
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+
+
+/* --- ส่วนหัว (Header) --- */
+.main-header {
+    display: flex; /* ใช้ Flexbox เพื่อจัดองค์ประกอบในแนวนอน */
+    justify-content: space-between; /* จัดโลโก้และเมนูให้อยู่คนละฝั่ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
+    padding: 20px 40px; /* กำหนดระยะห่างด้านใน */
 }
 
-.right-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.logo-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+    border: 3px solid #333; /* สร้างกรอบสีดำรอบโลโก้ */
 }
+
+.main-nav ul {
+    display: flex;
+    list-style: none; /* ลบจุดนำหน้าเมนู */
+}
+
+.main-nav li {
+    margin-left: 25px; /* ระยะห่างระหว่างเมนู */
+}
+
+.main-nav a {
+    text-decoration: none; /* ลบเส้นใต้ลิงก์ */
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+}
+
