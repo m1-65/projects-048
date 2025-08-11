@@ -1,4 +1,19 @@
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* ปรับ padding ตามต้องการ */
+    background-color: #ffffff; /* หรือสีพื้นหลังอื่นๆ */
+    border-bottom: 1px solid #ddd; /* สร้างเส้นแบ่งด้านล่าง (ไม่บังคับ) */
+}
 
+.logo-link {
+    display: flex; /* ทำให้ลิงก์จัดกึ่งกลางรูปภาพ */
+}
+
+.logo-img {
+    height: 50px; /* กำหนดความสูงของโลโก้ */
+    width: auto; /* ปรับความกว้างอัตโนมัติ */
+}
 .main-nav {
     display: flex;
     align-items: center;
