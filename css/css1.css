@@ -15,18 +15,23 @@ header{
 /* --- ส่วนหัว (Header) --- */
 .main-header {
     display: flex; /* ใช้ Flexbox เพื่อจัดองค์ประกอบในแนวนอน */
-    justify-content: space-between; /* จัดโลโก้และเมนูให้อยู่คนละฝั่ง */
+    
     align-items: center; /* จัดให้อยู่กึ่งกลางในแนวตั้ง */
     padding: 20px 40px; /* กำหนดระยะห่างด้านใน */
 }
-
+.box1{
+    justify-content: flex-start;
+}
 .logo-container img {
     width: 150px;
     height: 150px;
     border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
     border: 3px solid #333; /* สร้างกรอบสีดำรอบโลโก้ */
 }
-
+.main-nav {
+    justify-content: flex-end; /* ทำให้องค์ประกอบชิดขวา */
+    gap: 20px; /* ใช้ gap เพื่อกำหนดระยะห่างระหว่างเมนู */
+}
 .main-nav ul {
     display: flex;
     list-style: none; /* ลบจุดนำหน้าเมนู */
@@ -35,8 +40,7 @@ header{
     border-color: #000000;
     padding: 0px 0px 0px 100px;
     display: flex;
-    justify-content: center; /* นี่คือส่วนที่ทำให้เมนูอยู่ตรงกลาง */
-    gap: 20px; /* ใช้ gap เพื่อกำหนดระยะห่างระหว่างเมนู */
+    
 }
 
 .main-nav li {
