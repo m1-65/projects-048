@@ -3,32 +3,32 @@
   text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
 }
 .box8 {
-  list-style-type: none; /* ลบจุดนำหน้า */
-  margin: 0; /* ลบ margin */
-  padding: 0;  /* ลบ padding */
-  display: flex; /* ทำให้รายการเรียงกันเป็นแนวนอน */
-  justify-content: flex-end; /* จัดให้ชิดขวา */
+  list-style-type: none; /* ลบจุดนำหน้าของรายการ */
+  margin: 0;
+  padding: 0;
+  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
+  justify-content: flex-end; /* จัดเรียงรายการให้ชิดขวา */
+  align-items: center; /* จัดรายการให้อยู่กึ่งกลางในแนวตั้ง */
 }
 
 .box8 li {
-  margin-left: 20px; /* เพิ่มช่องว่างระหว่างแต่ละรายการ */
+  margin-left: 20px; /* เว้นระยะห่างด้านซ้ายระหว่างแต่ละรายการ */
 }
 
 .box8 a {
-  text-decoration: none; /* ลบเส้นใต้ */
-  color: black; /* กำหนดสีข้อความ */
+  text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+  color: #333; /* ตั้งค่าสีตัวอักษรให้ดูนุ่มนวลขึ้น */
+  font-weight: 500; /* ทำให้ตัวอักษรดูหนาขึ้นเล็กน้อย */
+  transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสีอย่างนุ่มนวล */
 }
-.box6 {
-    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการ */
-    justify-content: space-around; /* จัดเรียงองค์ประกอบให้มีช่องว่างเท่าๆ กัน */
-    align-items: center; /* จัดเรียงองค์ประกอบในแนวตั้งให้อยู่ตรงกลาง */
-    background-color: #f1f1f1;
-    padding: 10px; /* เพิ่ม padding รอบๆ */
+
+.box8 a:hover {
+  color: #007bff; /* เปลี่ยนสีตัวอักษรเมื่อนำเมาส์ไปวาง */
 }
 
 .box5 {
-  width: 80px;      /* กำหนดความกว้าง */
-  height: 80px;     /* กำหนดความสูงให้เท่ากับความกว้าง */
+  width: 150px;      /* กำหนดความกว้าง */
+  height: 150px;     /* กำหนดความสูงให้เท่ากับความกว้าง */
   border-radius: 50%; /* ทำให้เป็นวงกลม */
   overflow: hidden; /* ซ่อนส่วนเกินของรูปภาพที่อยู่นอกขอบวงกลม */
 }
