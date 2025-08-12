@@ -6,6 +6,7 @@
   /* กำหนดขนาดและตำแหน่งของโลโก้ */
   width: 200px; /* สามารถปรับขนาดได้ตามต้องการ */
   height: 200px; /* เพิ่มความสูงให้เท่ากับความกว้าง */
+  color: #0082ce;
   height: auto; /* ทำให้ความสูงปรับตามอัตราส่วนของรูปภาพ */
   text-align: left; /* จัดตำแหน่งให้ชิดซ้าย */
 }
@@ -21,7 +22,6 @@
   display: block;
 }
 .box6 {
-    list-style-type: none; /* ลบจุดหน้ารายการ */
     display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการ */
     justify-content: space-around; /* จัดเรียงองค์ประกอบให้มีช่องว่างเท่าๆ กัน */
     align-items: center; /* จัดเรียงองค์ประกอบในแนวตั้งให้อยู่ตรงกลาง */
@@ -29,11 +29,10 @@
     padding: 10px; /* เพิ่ม padding รอบๆ */
 }
 .box8 {
-  background-color: #2196F3;
-  color: white;
-  padding: 20px;
-  margin: 10px;
-  font-size: 20px;
   text-align: center;
-  text-decoration: none;
+}
+li {
+  margin: 0 10px; /* เพิ่มระยะห่างระหว่างรายการ */
+  text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+  list-style-type: none; /* ลบจุดหน้ารายการ */
 }
