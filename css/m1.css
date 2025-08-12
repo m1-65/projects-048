@@ -1,4 +1,18 @@
-p {
-    color: #00c3ff;
-    text-align: center;
+.3 {
+  /* กำหนดขนาดและตำแหน่งของโลโก้ */
+  width: 200px; /* สามารถปรับขนาดได้ตามต้องการ */
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.3 img {
+  /* ทำให้รูปภาพพอดีกับ container */
+  max-width: 100%;
+  height: auto;
+}
+
+.4{
+  /* ทำให้โลโก้ทั้งหมดเป็นลิงก์ */
+  display: block;
 }
