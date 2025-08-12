@@ -2,24 +2,21 @@
   margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
   text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
 }
-.box3 {
-  /* กำหนดขนาดและตำแหน่งของโลโก้ */
-  width: 200px; /* สามารถปรับขนาดได้ตามต้องการ */
-  height: 200px; /* เพิ่มความสูงให้เท่ากับความกว้าง */
-  color: #0082ce;
-  height: auto; /* ทำให้ความสูงปรับตามอัตราส่วนของรูปภาพ */
-  text-align: left; /* จัดตำแหน่งให้ชิดซ้าย */
+.box8 {
+  list-style-type: none; /* ลบจุดนำหน้า */
+  margin: 0; /* ลบ margin */
+  padding: 0;  /* ลบ padding */
+  display: flex; /* ทำให้รายการเรียงกันเป็นแนวนอน */
+  justify-content: flex-end; /* จัดให้ชิดขวา */
 }
 
-.box3 img {
-  /* ทำให้รูปภาพพอดีกับ container */
-  max-width: 100%;
-  height: auto;
+.box8 li {
+  margin-left: 20px; /* เพิ่มช่องว่างระหว่างแต่ละรายการ */
 }
 
-.box4{
-  /* ทำให้โลโก้ทั้งหมดเป็นลิงก์ */
-  display: block;
+.box8 a {
+  text-decoration: none; /* ลบเส้นใต้ */
+  color: black; /* กำหนดสีข้อความ */
 }
 .box6 {
     display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการ */
@@ -28,11 +25,16 @@
     background-color: #f1f1f1;
     padding: 10px; /* เพิ่ม padding รอบๆ */
 }
-.box8 {
-  text-align: center;
+
+.box5 {
+  width: 80px;      /* กำหนดความกว้าง */
+  height: 80px;     /* กำหนดความสูงให้เท่ากับความกว้าง */
+  border-radius: 50%; /* ทำให้เป็นวงกลม */
+  overflow: hidden; /* ซ่อนส่วนเกินของรูปภาพที่อยู่นอกขอบวงกลม */
 }
-li {
-  margin: 0 10px; /* เพิ่มระยะห่างระหว่างรายการ */
-  text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
-  list-style-type: none; /* ลบจุดหน้ารายการ */
+
+.box5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมดของ container */
 }
