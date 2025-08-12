@@ -1,10 +1,13 @@
+.box1 {
+  margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
 .box3 {
   /* กำหนดขนาดและตำแหน่งของโลโก้ */
   width: 200px; /* สามารถปรับขนาดได้ตามต้องการ */
   height: 200px; /* เพิ่มความสูงให้เท่ากับความกว้าง */
-  height: auto;
-  margin: 0 auto;
-  text-align: center;
+  height: auto; /* ทำให้ความสูงปรับตามอัตราส่วนของรูปภาพ */
+  text-align: left; /* จัดตำแหน่งให้ชิดซ้าย */
 }
 
 .box3 img {
@@ -16,4 +19,11 @@
 .box4{
   /* ทำให้โลโก้ทั้งหมดเป็นลิงก์ */
   display: block;
+}
+.box6 {
+    display: grid;
+    grid-template-columns: auto auto auto; /* กำหนดให้มี 3 คอลัมน์ แต่ละคอลัมน์มีขนาดอัตโนมัติ */
+    background-color: #f1f1f1;
+    padding: 10px;
+}
 }
