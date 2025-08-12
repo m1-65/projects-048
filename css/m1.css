@@ -21,9 +21,19 @@
   display: block;
 }
 .box6 {
-    display: grid;
-    grid-template-columns: auto auto auto; /* กำหนดให้มี 3 คอลัมน์ แต่ละคอลัมน์มีขนาดอัตโนมัติ */
+    list-style-type: none; /* ลบจุดหน้ารายการ */
+    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการ */
+    justify-content: space-around; /* จัดเรียงองค์ประกอบให้มีช่องว่างเท่าๆ กัน */
+    align-items: center; /* จัดเรียงองค์ประกอบในแนวตั้งให้อยู่ตรงกลาง */
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 10px; /* เพิ่ม padding รอบๆ */
 }
+.box8 {
+  background-color: #2196F3;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
 }
