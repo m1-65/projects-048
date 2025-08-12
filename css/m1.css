@@ -1,18 +1,19 @@
-.3 {
+.box3 {
   /* กำหนดขนาดและตำแหน่งของโลโก้ */
   width: 200px; /* สามารถปรับขนาดได้ตามต้องการ */
+  height: 200px; /* เพิ่มความสูงให้เท่ากับความกว้าง */
   height: auto;
   margin: 0 auto;
   text-align: center;
 }
 
-.3 img {
+.box3 img {
   /* ทำให้รูปภาพพอดีกับ container */
   max-width: 100%;
   height: auto;
 }
 
-.4{
+.box4{
   /* ทำให้โลโก้ทั้งหมดเป็นลิงก์ */
   display: block;
 }
