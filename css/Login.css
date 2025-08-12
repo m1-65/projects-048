@@ -1,82 +1,9 @@
-body {
-    /* พื้นหลังสีเทาอ่อน */
-    background-color: #e0e5ec;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.neumorphic-card {
-    /* สร้างความนูนของตัวกล่อง */
-    background: #e0e5ec;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 10px 10px 20px #a3b1c6,
-                -10px -10px 20px #ffffff;
-    width: 350px;
-    text-align: center;
-}
-
-h1 {
-    color: #555;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-/* ช่อง input และปุ่ม */
-.neumorphic-input {
-    width: 100%;
-    padding: 15px 20px;
-    margin-bottom: 25px;
-    border: none;
-    border-radius: 10px;
-    background: #e0e5ec;
-    color: #555;
-    font-size: 16px;
-    outline: none;
-    /* สร้างความจมของช่องกรอกข้อมูล */
-    box-shadow: inset 5px 5px 10px #a3b1c6,
-                inset -5px -5px 10px #ffffff;
-    box-sizing: border-box;
-}
-
-/* ปุ่ม submit */
-.neumorphic-button {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-radius: 10px;
-    background: #e0e5ec;
-    color: #555;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    outline: none;
-    /* สร้างความนูนของปุ่ม */
-    box-shadow: 6px 6px 12px #a3b1c6,
-                -6px -6px 12px #ffffff;
-    transition: all 0.2s ease-in-out;
-}
-
-.neumorphic-button:hover {
-    /* เมื่อเอาเมาส์ไปวางที่ปุ่ม */
-    box-shadow: 3px 3px 6px #a3b1c6,
-                -3px -3px 6px #ffffff;
-    transform: scale(0.98);
-}
-
-.neumorphic-button:active {
-    /* เมื่อกดปุ่ม */
-    box-shadow: inset 3px 3px 6px #a3b1c6,
-                inset -3px -3px 6px #ffffff;
-}
-
-/* ข้อความแสดงข้อผิดพลาด */
-#error-message {
-    color: #d9534f;
-    margin-top: 20px;
-    font-weight: bold;
+<pre><code>body {
+background-color: #f0f2f5; /* หรือสีพื้นหลังที่คุณต้องการ */
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง (ถ้าต้องการ) */
+min-height: 100vh; /* ทำให้ครอบคลุมความสูงของ viewport */
+margin: 0; /* ลบ margin เริ่มต้นของ body */
 }
