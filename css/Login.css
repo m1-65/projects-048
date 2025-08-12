@@ -1,9 +1,0 @@
-<pre><code>body {
-background-color: #f0f2f5; /* หรือสีพื้นหลังที่คุณต้องการ */
-font-family: Arial, sans-serif;
-display: flex;
-justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
-align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง (ถ้าต้องการ) */
-min-height: 100vh; /* ทำให้ครอบคลุมความสูงของ viewport */
-margin: 0; /* ลบ margin เริ่มต้นของ body */
-}
