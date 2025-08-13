@@ -105,7 +105,8 @@ section {
 }
 article {
   background-color: #fff; /* กำหนดพื้นหลังให้เป็นสีขาว */
-  border: 10px solid #ddd; /* กำหนดเส้นขอบ */   
+  border: 5px solid black;   /* กำหนดเส้นขอบให้เป็นสีดำ */
+  border-radius: 20px; /* กำหนดความโค้งของมุม */
   padding: 15px;  /* เพิ่มระยะห่างรอบๆ เนื้อหา */
   margin-bottom: 15px;  /* เพิ่มระยะห่างด้านล่างของแต่ละ article */
 }
