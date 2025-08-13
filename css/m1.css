@@ -5,8 +5,10 @@
 body {
   font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
   line-height: 1.6; /* กำหนดระยะห่างระหว่างบรรทัด */
-  background-color: #0da3fa; /* กำหนดพื้นหลังให้เป็นสีเทาอ่อน */
   color: #333; /* กำหนดสีตัวอักษร */
+}
+body {
+  background-image: url('https://th-media.apjonlinecdn.com/magefan_blog/25-best-hd-wallpapers-laptops159561982840438_1.jpg'); /* กำหนดภาพพื้นหลัง */
 }
 .box8 {
   list-style-type: none; /* ลบจุดนำหน้าของรายการ */
@@ -28,14 +30,16 @@ body {
   font-weight: 500; /* ทำให้ตัวอักษรดูหนาขึ้นเล็กน้อย */
   transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสีอย่างนุ่มนวล */
 }
-
 .box8 a:hover {
   color: #007bff; /* เปลี่ยนสีตัวอักษรเมื่อนำเมาส์ไปวาง */
 }
 .box8{
-    border-style: solid; /* กำหนดเส้นขอบ */
+  border-style: solid; /* กำหนดเส้นขอบ */
 }
-.box8 a {
+.gg {
+  border-style: solid; /* กำหนดเส้นขอบ */
+} 
+ a {
     font-size: 30px; /* กำหนดขนาดตัวอักษร */
 }
 li{
