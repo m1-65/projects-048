@@ -69,7 +69,6 @@ li{
   display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
   justify-content: center; /* จัดเรียงรายการให้ชิดขวา */
   align-items: center; /* จัดรายการให้อยู่กึ่งกลางในแนวตั้ง */
-  border-radius: 20px; /* กำหนดความโค้งของมุม */
 }
 .box11 {
     width: 100%; /* กำหนดความกว้างเต็มที่ */
@@ -94,6 +93,11 @@ li{
 }
 .box9{
     border-style: solid; /* กำหนดเส้นขอบ */
+    border-radius: 20px; /* กำหนดความโค้งของมุม */
+    background-color: #00f7ff;  /* กำหนดสีตัวอักษร */
+}
+.box12 {
+  color: #000000;  /* กำหนดสีตัวอักษร */
 }
 .box10 a {
     font-size: 30px; /* กำหนดขนาดตัวอักษร */
@@ -145,4 +149,7 @@ aside {
   margin: 20px auto; /* จัดให้อยู่ตรงกลาง */
   border-style: solid; /* กำหนดเส้นขอบ */
   border-radius: 20px; /* กำหนดความโค้งของมุม */
+}
+h1 h2 h3  {
+  color: #ffd900; /* กำหนดสีตัวอักษร */
 }
