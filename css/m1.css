@@ -35,9 +35,11 @@ body {
 }
 .box8{
   border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 20px; /* กำหนดความโค้งของมุม */
 }
 .gg {
   border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 50px; /* กำหนดความโค้งของมุม */
 } 
  a {
     font-size: 30px; /* กำหนดขนาดตัวอักษร */
@@ -137,4 +139,6 @@ aside {
 .box14 {
   background-color: #fff; /* กำหนดพื้นหลังให้เป็นสีขาว */
   margin: 20px auto; /* จัดให้อยู่ตรงกลาง */
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 20px; /* กำหนดความโค้งของมุม */
 }
