@@ -86,7 +86,7 @@ li{
     display: flex; /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหา */
     justify-content: center; /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวนอน */
     align-items: center; /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวตั้ง */
-    font-size: 50px; /* กำหนดขนาดตัวอักษร */
+    font-size: 30px; /* กำหนดขนาดตัวอักษร */
 }
 .h3 {
     color: brown;
@@ -116,4 +116,10 @@ aside {
   width: 30%; /* กำหนดความกว้างของ aside */
   margin-left: 20px;  /* เพิ่มระยะห่างด้านซ้ายของ aside */
   box-sizing: border-box;   /* ทำให้ padding และ border นับรวมในขนาดของ element */
+}
+.box13 {
+  text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  font-size: 30px; /* กำหนดขนาดตัวอักษร */
+  color: #333; /* กำหนดสีตัวอักษร */
+  margin-bottom: 50px; /* เพิ่มระยะห่างด้านล่าง */
 }
