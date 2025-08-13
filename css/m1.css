@@ -9,7 +9,9 @@ body {
 }
 body {
   background-image: url('https://th-media.apjonlinecdn.com/magefan_blog/25-best-hd-wallpapers-laptops159561982840438_1.jpg'); /* กำหนดภาพพื้นหลัง */
-  
+  background-repeat: no-repeat; /* ไม่ให้ภาพพื้นหลังซ้ำ */
+  background-size: cover; /* ทำให้ภาพพื้นหลังครอบคลุมพื้นที่ทั้งหมด */
+  background-attachment: fixed; /* ทำให้ภาพพื้นหลังไม่เลื่อนตามการเลื่อนของหน้า */
 }
 .box8 {
   list-style-type: none; /* ลบจุดนำหน้าของรายการ */
