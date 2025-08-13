@@ -91,3 +91,27 @@ li{
 .h3 {
     color: brown;
 }
+ main {
+   flex: 1; /* ดันให้ footer ลงไปล่าง */
+   display: flex; /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหา */
+   padding: 20px; /* เพิ่มระยะห่างรอบๆ เนื้อหา */
+   box-sizing: border-box;   /* ทำให้ padding และ border นับรวมในขนาดของ element */
+}
+section {
+  flex: 2; /* ให้ section ใช้พื้นที่มากกว่าของ main */
+  padding: 15px;  /* เพิ่มระยะห่างรอบๆ เนื้อหา */
+}
+article {
+  background-color: #fff; /* กำหนดพื้นหลังให้เป็นสีขาว */
+  border: 10px solid #ddd; /* กำหนดเส้นขอบ */   
+  padding: 15px;  /* เพิ่มระยะห่างรอบๆ เนื้อหา */
+  margin-bottom: 15px;  /* เพิ่มระยะห่างด้านล่างของแต่ละ article */
+}
+aside {
+  background-color: #f4f4f4;  /* กำหนดพื้นหลังให้เป็นสีเทาอ่อน */
+  padding: 15px;    /* เพิ่มระยะห่างรอบๆ เนื้อหา */
+  float: right; /* ทำให้ aside ลอยไปทางขวา */
+  width: 30%; /* กำหนดความกว้างของ aside */
+  margin-left: 20px;  /* เพิ่มระยะห่างด้านซ้ายของ aside */
+  box-sizing: border-box;   /* ทำให้ padding และ border นับรวมในขนาดของ element */
+}
