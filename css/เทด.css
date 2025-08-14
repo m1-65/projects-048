@@ -1,57 +1,38 @@
-.box11 {
+.box8 {
+  background-color: #00f7ff; /* กำหนดสีพื้นหลัง */
+}
+.box8 {
   list-style-type: none; /* ลบจุดนำหน้าของรายการ */
   margin: 0; /* ลบระยะขอบด้านนอก */
   padding: 0; /* ลบระยะขอบด้านใน */
   display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
-  justify-content: center; /* จัดเรียงรายการให้ชิดขวา */
+  justify-content: flex-end; /* จัดเรียงรายการให้ชิดขวา */
   align-items: center; /* จัดรายการให้อยู่กึ่งกลางในแนวตั้ง */
 }
-.box11 {
-    width: 100%; /* กำหนดความกว้างเต็มที่ */
-    height: px; /* กำหนดความสูง */
-}
-.box10 li {
-  margin: 0 50px; /* เว้นระยะห่างด้านซ้ายและขวา */
-}
-.box10 li {
-  margin-left: px; /* เว้นระยะห่างด้านซ้ายระหว่างแต่ละรายการ */
+
+.box8 li {
+  margin-left: 20px; /* เว้นระยะห่างด้านซ้ายระหว่างแต่ละรายการ */
+  font-size: 40px; /* กำหนดขนาดตัวอักษร */
 }
 
-.box10 a {
+.box8 a {
   text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
   color: #333; /* ตั้งค่าสีตัวอักษรให้ดูนุ่มนวลขึ้น */
   font-weight: 500; /* ทำให้ตัวอักษรดูหนาขึ้นเล็กน้อย */
   transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสีอย่างนุ่มนวล */
 }
-
-.box10 a:hover {
+.box8 a:hover {
   color: #007bff; /* เปลี่ยนสีตัวอักษรเมื่อนำเมาส์ไปวาง */
 }
-.box9{
-    border-style: solid; /* กำหนดเส้นขอบ */
-    border-radius: 20px; /* กำหนดความโค้งของมุม */
-    background-color: #00f7ff;  /* กำหนดสีตัวอักษร */
+.box8{
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 20px; /* กำหนดความโค้งของมุม */
 }
-body {
-  font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
-  line-height: 1.6; /* กำหนดระยะห่างระหว่างบรรทัด */
-  color: #333; /* กำหนดสีตัวอักษร */
+.box7 {
+  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
+  justify-content: flex-end; /* จัดเรียงรายการให้ชิดขวา */
 }
-.box12 {
-  color: #000000;  /* กำหนดสีตัวอักษร */
-}
-.box10 a {
-    font-size: 30px; /* กำหนดขนาดตัวอักษร */
-}
-.box12 {
-    display: flex; /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหา */
-    justify-content: center; /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวนอน */
-    align-items: center; /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวตั้ง */
-    font-size: 30px; /* กำหนดขนาดตัวอักษร */
-}
-.m5 {
-  width: 100px; /* กำหนดความกว้างของกล่อง */
-  height: 100px; /* กำหนดความสูงของกล่อง */
-  
-  
+.go {
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 20px; /* กำหนดความโค้งของมุม */
 }
