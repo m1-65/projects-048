@@ -54,12 +54,18 @@ li{
   justify-content: flex-end; /* จัดเรียงรายการให้ชิดขวา */
 }
 .go {
+  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
+}
+.go1 {
+  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
+}
+.gg {
   border-style: solid; /* กำหนดเส้นขอบ */
   border-radius: 20px; /* กำหนดความโค้งของมุม */
 }
-.go1 {
-  list-style-type: none; /* ลบจุดนำหน้าของรายการ */
-  text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
+.go3 {
+  width: 500px; /* กำหนดความกว้าง */
+  height: 200px; /* กำหนดความสูง */
 }
 .box5 {
   width: 150px;      /* กำหนดความกว้าง */
@@ -186,7 +192,10 @@ p {
   margin-bottom: 5px; /* เพิ่มระยะห่างด้านล่าง */
 }
 .m7 {
+  width: 50%; /* กำหนดความกว้างเต็มที่ */
+  height: 100px; /* กำหนดความสูง */
+  margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
   border-style: solid; /* กำหนดเส้นขอบ */
   border-radius: 20px; /* กำหนดความโค้งของมุม */
-  background-color: #00f7ff; /* กำหนดสีพื้นหลัง */
+  background-color: #ffffff; /* กำหนดสีพื้นหลัง */
 }
