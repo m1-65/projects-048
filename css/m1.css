@@ -43,10 +43,6 @@ body {
   border-style: solid; /* กำหนดเส้นขอบ */
   border-radius: 20px; /* กำหนดความโค้งของมุม */
 }
-.gg {
-  border-style: solid; /* กำหนดเส้นขอบ */
-  border-radius: 50px; /* กำหนดความโค้งของมุม */
-} 
  a {
     font-size: 30px; /* กำหนดขนาดตัวอักษร */
 }
@@ -99,8 +95,10 @@ li{
     border-radius: 20px; /* กำหนดความโค้งของมุม */
     background-color: #00f7ff;  /* กำหนดสีตัวอักษร */
 }
-.box12 {
-  color: #000000;  /* กำหนดสีตัวอักษร */
+body {
+  font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
+  line-height: 1.6; /* กำหนดระยะห่างระหว่างบรรทัด */
+  color: #333; /* กำหนดสีตัวอักษร */
 }
 .box10 a {
     font-size: 30px; /* กำหนดขนาดตัวอักษร */
@@ -110,6 +108,12 @@ li{
     justify-content: center; /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวนอน */
     align-items: center; /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวตั้ง */
     font-size: 30px; /* กำหนดขนาดตัวอักษร */
+}
+.m5 {
+  width: 100px; /* กำหนดความกว้างของกล่อง */
+  height: 100px; /* กำหนดความสูงของกล่อง */
+  border-style: solid; /* กำหนดเส้นขอบ */
+    border-radius: 30px; /* กำหนดความโค้งของมุม */
 }
 .h3 {
     color: brown;
