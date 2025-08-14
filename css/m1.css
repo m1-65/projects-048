@@ -164,3 +164,8 @@ p {
   color: #505050; /* กำหนดสีตัวอักษร */
   margin-bottom: 5px; /* เพิ่มระยะห่างด้านล่าง */
 }
+.m7 {
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 20px; /* กำหนดความโค้งของมุม */
+  background-color: #ffffff; /* กำหนดสีพื้นหลัง */
+}
