@@ -1,6 +1,7 @@
 .box1 {
   margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
   text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  display: grid; 
 }
 body {
   font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
@@ -192,7 +193,7 @@ p {
   margin-bottom: 5px; /* เพิ่มระยะห่างด้านล่าง */
 }
 .m7 {
-  width: 50%; /* กำหนดความกว้างเต็มที่ */
+  width: 80%; /* กำหนดความกว้างเต็มที่ */
   height: 100px; /* กำหนดความสูง */
   margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
   border-style: solid; /* กำหนดเส้นขอบ */
