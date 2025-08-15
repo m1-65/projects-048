@@ -1,38 +1,141 @@
-.box8 {
-  background-color: #00f7ff; /* กำหนดสีพื้นหลัง */
-}
-.box8 {
-  list-style-type: none; /* ลบจุดนำหน้าของรายการ */
-  margin: 0; /* ลบระยะขอบด้านนอก */
-  padding: 0; /* ลบระยะขอบด้านใน */
-  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
-  justify-content: flex-end; /* จัดเรียงรายการให้ชิดขวา */
-  align-items: center; /* จัดรายการให้อยู่กึ่งกลางในแนวตั้ง */
+/* css/style.css */
+
+/* --- General Styles (เหมือนเดิม) --- */
+body {
+    font-family: 'Sarabun', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-.box8 li {
-  margin-left: 20px; /* เว้นระยะห่างด้านซ้ายระหว่างแต่ละรายการ */
-  font-size: 40px; /* กำหนดขนาดตัวอักษร */
+/* --- Header and Navigation (อัปเดตใหม่) --- */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 2rem; /* ปรับ padding */
+    position: sticky; /* ทำให้ header อยู่ด้านบนสุดเมื่อเลื่อนจอ */
+    top: 0;
+    z-index: 1000;
 }
 
-.box8 a {
-  text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
-  color: #333; /* ตั้งค่าสีตัวอักษรให้ดูนุ่มนวลขึ้น */
-  font-weight: 500; /* ทำให้ตัวอักษรดูหนาขึ้นเล็กน้อย */
-  transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสีอย่างนุ่มนวล */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* จัดให้อยู่คนละฝั่ง */
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.box8 a:hover {
-  color: #007bff; /* เปลี่ยนสีตัวอักษรเมื่อนำเมาส์ไปวาง */
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
-.box8{
-  border-style: solid; /* กำหนดเส้นขอบ */
-  border-radius: 20px; /* กำหนดความโค้งของมุม */
+
+.logo-img {
+    height: 40px; /* กำหนดความสูงโลโก้ */
+    margin-right: 10px;
 }
-.box7 {
-  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
-  justify-content: flex-end; /* จัดเรียงรายการให้ชิดขวา */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
-.go {
-  border-style: solid; /* กำหนดเส้นขอบ */
-  border-radius: 20px; /* กำหนดความโค้งของมุม */
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* --- Main Content (เหมือนเดิม) --- */
+main {
+    flex-grow: 1;
+    padding: 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin: 40px auto; /* เพิ่มระยะห่างจาก header */
+}
+
+/* --- Login Form (เหมือนเดิม) --- */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+form h2 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Footer (เหมือนเดิม) --- */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto;
 }
