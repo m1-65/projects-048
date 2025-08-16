@@ -1,6 +1,17 @@
 .box1 {
   margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
   text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+  font-size: 20px; /* กำหนดขนาดตัวอักษร */
+}
+.box2 {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* เงาเล็กน้อยที่ด้านล่างของ header */
+  padding: 0.5rem rem; /* ปรับ padding */
+  position: sticky; /* ทำให้ header อยู่ด้านบนสุดเมื่อเลื่อนจอ */
+  top: 0; /* ตำแหน่งอยู่ที่ด้านบนสุด */
+  z-index: 1000;  /* ทำให้ header อยู่เหนือเนื้อหาอื่น ๆ */
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 10px; /* ทำให้มุมโค้งมน */
 }
 body {
   font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
@@ -12,9 +23,6 @@ body {
   background-repeat: no-repeat; /* ไม่ให้ภาพพื้นหลังซ้ำ */
   background-size: cover; /* ทำให้ภาพพื้นหลังครอบคลุมพื้นที่ทั้งหมด */
   background-attachment: fixed; /* ทำให้ภาพพื้นหลังไม่เลื่อนตามการเลื่อนของหน้า */
-}
-.box8 {
-  background-color: #00f7ff; /* กำหนดสีพื้นหลัง */
 }
 .box8 {
   list-style-type: none; /* ลบจุดนำหน้าของรายการ */
@@ -31,17 +39,16 @@ body {
 }
 
 .box8 a {
-  text-decoration: none; /* ลบเส้นใต้ของลิงก์ */
-  color: #333; /* ตั้งค่าสีตัวอักษรให้ดูนุ่มนวลขึ้น */
-  font-weight: 500; /* ทำให้ตัวอักษรดูหนาขึ้นเล็กน้อย */
-  transition: color 0.3s ease; /* เพิ่มเอฟเฟกต์เปลี่ยนสีอย่างนุ่มนวล */
+  text-decoration: none;  /* ลบเส้นใต้ของลิงก์ */
+    color: #555;    /* กำหนดสีข้อความของลิงก์ */
+    font-weight: bold;  /* ทำให้ตัวหนา */
+    padding: 10px 15px; /* เพิ่ม padding เพื่อให้ลิงก์มีพื้นที่คลิก */
+    border-radius: 5px;    /* มุมโค้งมน */
+    transition: background-color 0.3s, color 0.3s;  /* เพิ่มการเปลี่ยนแปลงสีเมื่อ hover */
 }
-.box8 a:hover {
-  color: #007bff; /* เปลี่ยนสีตัวอักษรเมื่อนำเมาส์ไปวาง */
-}
-.box8{
-  border-style: solid; /* กำหนดเส้นขอบ */
-  border-radius: 20px; /* กำหนดความโค้งของมุม */
+.box8 a:hover, .box8 a.active {
+    background-color: #007bff;  /* เปลี่ยนสีพื้นหลังเมื่อ hover หรือ active */
+    color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ hover หรือ active */
 }
  a {
     font-size: 30px; /* กำหนดขนาดตัวอักษร */
@@ -60,28 +67,29 @@ li{
   display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
 }
 .gg {
-  border-style: solid; /* กำหนดเส้นขอบ */
-  border-radius: 20px; /* กำหนดความโค้งของมุม */
+  
 }
 .go3 {
   width: 500px; /* กำหนดความกว้าง */
   height: 200px; /* กำหนดความสูง */
 }
 .box5 {
-  width: 150px;      /* กำหนดความกว้าง */
-  height: 150px;     /* กำหนดความสูงให้เท่ากับความกว้าง */
+  width: 100px;      /* กำหนดความกว้าง */
+  height: 100px;     /* กำหนดความสูงให้เท่ากับความกว้าง */
   border-radius: 50%; /* ทำให้เป็นวงกลม */
   overflow: hidden; /* ซ่อนส่วนเกินของรูปภาพที่อยู่นอกขอบวงกลม */
-}
-.box3 {
-  margin: 0; /* ลบระยะขอบด้านนอก */
-  padding: 0; /* ลบระยะขอบด้านใน */
-  display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
 }
 .box5 img {
   width: 100%;
   height: 100%;
   object-fit: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมดของ container */
+}
+.box3 {
+  display: flex;  /* ใช้ flexbox เพื่อจัด layout */
+  justify-content: space-between; /* จัดให้อยู่คนละฝั่ง */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  max-width: 80%;  /* กำหนดความกว้างสูงสุด */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
 }
 .box11 {
   list-style-type: none; /* ลบจุดนำหน้าของรายการ */

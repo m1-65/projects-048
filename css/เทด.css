@@ -2,67 +2,67 @@
 
 /* --- General Styles (เหมือนเดิม) --- */
 body {
-    font-family: 'Sarabun', sans-serif;
-    margin: 0;
-    background-color: #f0f2f5;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: 'Sarabun', sans-serif; /* ใช้ฟอนต์ Sarabun */
+    margin: 0;  /* ลบ margin ของ body */
+    background-color: #f0f2f5;  /* กำหนดสีพื้นหลัง */
+    color: #333;    /* กำหนดสีข้อความ */
+    display: flex;  /* ใช้ flexbox เพื่อจัด layout */
+    flex-direction: column; /* จัด layout ในแนวตั้ง */
+    min-height: 100vh;  /* ทำให้ body มีความสูงอย่างน้อย 100% ของ viewport */
 }
 
 /* --- Header and Navigation (อัปเดตใหม่) --- */
 header {
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* เงาเล็กน้อยที่ด้านล่างของ header */
     padding: 0.5rem 2rem; /* ปรับ padding */
     position: sticky; /* ทำให้ header อยู่ด้านบนสุดเมื่อเลื่อนจอ */
-    top: 0;
-    z-index: 1000;
+    top: 0; /* ตำแหน่งอยู่ที่ด้านบนสุด */
+    z-index: 1000;  /* ทำให้ header อยู่เหนือเนื้อหาอื่น ๆ */
 }
 
 .header-container {
-    display: flex;
+    display: flex;  /* ใช้ flexbox เพื่อจัด layout */
     justify-content: space-between; /* จัดให้อยู่คนละฝั่ง */
     align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px;  /* กำหนดความกว้างสูงสุด */
+    margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
 }
 
 .logo-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 1.5rem;
-    font-weight: bold;
+    display: flex;  /* ใช้ flexbox เพื่อจัดโลโก้ */
+    align-items: center;    /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    text-decoration: none;  /* ลบเส้นใต้ของลิงก์ */
+    color: #333;    /* กำหนดสีข้อความของโลโก้ */
+    font-size: 1.5rem;  /* ขนาดฟอนต์ของโลโก้ */
+    font-weight: bold;  /* ทำให้ตัวหนา */
 }
 
 .logo-img {
     height: 40px; /* กำหนดความสูงโลโก้ */
-    margin-right: 10px;
+    margin-right: 10px; /* ระยะห่างระหว่างโลโก้และข้อความ */
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+    list-style: none;   /* ลบจุดหน้าหัวข้อ */
+    margin: 0;  /* ลบ margin */
+    padding: 0; /* ลบ padding */
+    display: flex;  /* ใช้ flexbox เพื่อจัดรายการ */
+    gap: 20px;  /* ระยะห่างระหว่างรายการ */
 }
 
 nav a {
-    text-decoration: none;
-    color: #555;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;  /* ลบเส้นใต้ของลิงก์ */
+    color: #555;    /* กำหนดสีข้อความของลิงก์ */
+    font-weight: bold;  /* ทำให้ตัวหนา */
+    padding: 10px 15px; /* เพิ่ม padding เพื่อให้ลิงก์มีพื้นที่คลิก */
+    border-radius: 5px;    /* มุมโค้งมน */
+    transition: background-color 0.3s, color 0.3s;  /* เพิ่มการเปลี่ยนแปลงสีเมื่อ hover */
 }
 
 nav a:hover, nav a.active {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #007bff;  /* เปลี่ยนสีพื้นหลังเมื่อ hover หรือ active */
+    color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ hover หรือ active */
 }
 /* --- Footer (เหมือนเดิม) --- */
 footer {
