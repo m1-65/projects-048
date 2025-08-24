@@ -207,3 +207,12 @@ p {
   border-radius: 20px; /* กำหนดความโค้งของมุม */
   background-color: #ffffff; /* กำหนดสีพื้นหลัง */
 }
+.g3 {
+  width: 50%; /* กำหนดความกว้างเต็มที่ */
+  height: 300px; /* กำหนดความสูง */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลางในแนวนอน */
+  align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 20px; /* กำหนดความโค้งของมุม */
+  background-color: #ffffff; /* กำหนดสีพื้นหลัง */
+}
