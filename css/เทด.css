@@ -1,74 +1,69 @@
-/* css/style.css */
-
-/* --- General Styles (เหมือนเดิม) --- */
-body {
-    font-family: 'Sarabun', sans-serif; /* ใช้ฟอนต์ Sarabun */
+.g16 {
+  width: 50%; /* กำหนดความกว้างเต็มที่ */
+  height: 50%; /* กำหนดความสูง */
+  border-color: #ffffff; /* กำหนดสีเส้นขอบ */
+}
+.g15 {
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
+    background-color: #ffffff; /* สีพื้นหลังอ่อนๆ */
+    display: flex;  /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหา */
+    justify-content: center;  /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวนอน */
+    align-items: center;  /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวตั้ง */
+    height: 100vh; /* ทำให้หน้าจอกึ่งกลางในแนวตั้ง */
     margin: 0;  /* ลบ margin ของ body */
-    background-color: #f0f2f5;  /* กำหนดสีพื้นหลัง */
-    color: #333;    /* กำหนดสีข้อความ */
-    display: flex;  /* ใช้ flexbox เพื่อจัด layout */
-    flex-direction: column; /* จัด layout ในแนวตั้ง */
-    min-height: 100vh;  /* ทำให้ body มีความสูงอย่างน้อย 100% ของ viewport */
+}
+.k7 {
+    align-items: center;  /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวตั้ง */
+}
+.login-container {
+    background-color: #fff; /* สีพื้นหลังของกล่อง */
+    padding: 30px;  /* ระยะห่างภายในกล่อง */
+    border-radius: 8px; /* ขอบโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเพื่อความสวยงาม */
+    width: 300px; /* กำหนดความกว้างของกล่อง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
 }
 
-/* --- Header and Navigation (อัปเดตใหม่) --- */
-header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* เงาเล็กน้อยที่ด้านล่างของ header */
-    padding: 0.5rem 2rem; /* ปรับ padding */
-    position: sticky; /* ทำให้ header อยู่ด้านบนสุดเมื่อเลื่อนจอ */
-    top: 0; /* ตำแหน่งอยู่ที่ด้านบนสุด */
-    z-index: 1000;  /* ทำให้ header อยู่เหนือเนื้อหาอื่น ๆ */
+h2 {
+    margin-bottom: 20px;  /* ระยะห่างด้านล่าง */
+    color: #333;  /* สีข้อความ */
 }
 
-.header-container {
-    display: flex;  /* ใช้ flexbox เพื่อจัด layout */
-    justify-content: space-between; /* จัดให้อยู่คนละฝั่ง */
-    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-    max-width: 1200px;  /* กำหนดความกว้างสูงสุด */
-    margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
-}
-
-.logo-link {
-    display: flex;  /* ใช้ flexbox เพื่อจัดโลโก้ */
-    align-items: center;    /* จัดให้อยู่กึ่งกลางแนวตั้ง */
-    text-decoration: none;  /* ลบเส้นใต้ของลิงก์ */
-    color: #333;    /* กำหนดสีข้อความของโลโก้ */
-    font-size: 1.5rem;  /* ขนาดฟอนต์ของโลโก้ */
+label {
+    display: block; /* ทำให้ label ขึ้นบรรทัดใหม่ */
+    text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
+    margin-bottom: 5px; /* ระยะห่างด้านล่าง */
     font-weight: bold;  /* ทำให้ตัวหนา */
 }
 
-.logo-img {
-    height: 40px; /* กำหนดความสูงโลโก้ */
-    margin-right: 10px; /* ระยะห่างระหว่างโลโก้และข้อความ */
+input[type="text"],
+input[type="password"] {
+    width: 100%;  
+    padding: 10px;  
+    box-sizing: border-box; /* ทำให้ padding ไม่เพิ่มขนาดกล่อง */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
 }
 
-nav ul {
-    list-style: none;   /* ลบจุดหน้าหัวข้อ */
-    margin: 0;  /* ลบ margin */
-    padding: 0; /* ลบ padding */
-    display: flex;  /* ใช้ flexbox เพื่อจัดรายการ */
-    gap: 20px;  /* ระยะห่างระหว่างรายการ */
-}
-
-nav a {
-    text-decoration: none;  /* ลบเส้นใต้ของลิงก์ */
-    color: #555;    /* กำหนดสีข้อความของลิงก์ */
-    font-weight: bold;  /* ทำให้ตัวหนา */
-    padding: 10px 15px; /* เพิ่ม padding เพื่อให้ลิงก์มีพื้นที่คลิก */
-    border-radius: 5px;    /* มุมโค้งมน */
-    transition: background-color 0.3s, color 0.3s;  /* เพิ่มการเปลี่ยนแปลงสีเมื่อ hover */
-}
-
-nav a:hover, nav a.active {
-    background-color: #007bff;  /* เปลี่ยนสีพื้นหลังเมื่อ hover หรือ active */
-    color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ hover หรือ active */
-}
-/* --- Footer (เหมือนเดิม) --- */
-footer {
-    background-color: #333;
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* เพิ่ม transition เมื่อ hover */
+}
+
+button:hover {
+    background-color: #09ff00;
+}
+
+#error-message {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
 }

@@ -51,7 +51,7 @@ body {
     color: #ffffff; /* เปลี่ยนสีข้อความเมื่อ hover หรือ active */
 }
  a {
-    font-size: 30px; /* กำหนดขนาดตัวอักษร */
+    font-size: 20px; /* กำหนดขนาดตัวอักษร */
 }
 li{
     margin: 0px 30px; /* กำหนดระยะห่างด้านบนและล่าง 10px และด้านซ้ายและขวา 20px */
@@ -65,9 +65,6 @@ li{
 }
 .go1 {
   display: flex; /* ใช้ Flexbox เพื่อจัดเรียงรายการในแนวนอน */
-}
-.gg {
-  
 }
 .go3 {
   width: 500px; /* กำหนดความกว้าง */
@@ -211,8 +208,80 @@ p {
   width: 50%; /* กำหนดความกว้างเต็มที่ */
   height: 300px; /* กำหนดความสูง */
   margin: 0 auto; /* จัดให้อยู่กึ่งกลางในแนวนอน */
-  align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
   border-style: solid; /* กำหนดเส้นขอบ */
   border-radius: 20px; /* กำหนดความโค้งของมุม */
   background-color: #ffffff; /* กำหนดสีพื้นหลัง */
+}
+.g16 {
+  background-color: #ffffff;  /* สีพื้นหลังอ่อนๆ */
+  border-style: solid; /* กำหนดเส้นขอบ */
+  border-radius: 10px; /* ทำให้มุมโค้งมน */
+}
+.g17 {
+  margin: 60px; /* กำหนดระยะห่างรอบด้าน 20px */
+}
+.g15 {
+    font-family: Arial, sans-serif; /* กำหนดฟอนต์ให้กับเนื้อหา */
+    background-color: #ffffff; /* สีพื้นหลังอ่อนๆ */
+    display: flex;  /* ใช้ Flexbox เพื่อจัดเรียงเนื้อหา */
+    justify-content: center;  /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวนอน */
+    align-items: center;  /* จัดเนื้อหาให้อยู่กึ่งกลางในแนวตั้ง */
+    height: 100vh; /* ทำให้หน้าจอกึ่งกลางในแนวตั้ง */
+    margin: 0;  /* ลบ margin ของ body */
+}
+.h9 {
+    color: #333;  /* สีข้อความ */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+.login-container {
+    background-color: #fff; /* สีพื้นหลังของกล่อง */
+    padding: 30px;  /* ระยะห่างภายในกล่อง */
+    border-radius: 8px; /* ขอบโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาเพื่อความสวยงาม */
+    width: 300px; /* กำหนดความกว้างของกล่อง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+h2 {
+    margin-bottom: 20px;  /* ระยะห่างด้านล่าง */
+    color: #333;  /* สีข้อความ */
+}
+
+label {
+    display: block; /* ทำให้ label ขึ้นบรรทัดใหม่ */
+    text-align: left; /* จัดข้อความให้อยู่ชิดซ้าย */
+    margin-bottom: 5px; /* ระยะห่างด้านล่าง */
+    font-weight: bold;  /* ทำให้ตัวหนา */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;  
+    padding: 10px;  
+    box-sizing: border-box; /* ทำให้ padding ไม่เพิ่มขนาดกล่อง */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* เพิ่ม transition เมื่อ hover */
+}
+
+button:hover {
+    background-color: #09ff00;
+}
+
+#error-message {
+    margin-top: 15px;
+    color: red;
+    font-weight: bold;
 }

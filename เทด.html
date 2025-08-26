@@ -6,28 +6,22 @@
     <title>หน้าแรก</title>
     <link rel="stylesheet" href="css/เทด.css">
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <a href="index.html" class="logo-link">
-                <img src="images/logo.png" alt="โลโก้เว็บไซต์" class="logo-img">
-                <span>MyWebsite</span>
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="active">หน้าแรก</a></li>
-                    <li><a href="page2.html">เกี่ยวกับเรา</a></li>
-                    <li><a href="page3.html">บริการ</a></li>
-                    <li><a href="login.html">เข้าสู่ระบบ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <footer>
-        <p>&copy; 2025 </p>
-    </footer>
-
-    <script src="js/script.js"></script>
+<body class="g15">
+    <div class="g16">
+        <div class="g17">
+    <h1 class="k7">เข้าสู่ระบบ</h1>
+    
+    <form id="loginForm">
+        <label for="username">ชื่อผู้ใช้</label>
+        <input type="text" name="mame" id="username">
+        <label for="password">รหัสผ่าน</label>
+        <input type="password" name="passwoed" id="password">
+        <button type="submit">ยืนยัน</button>
+    </form>
+    <p id="error-message"></p>
+    
+    <script src="JavaScript/Login.js"></script>
+    </div>
+</div>
 </body>
 </html>
