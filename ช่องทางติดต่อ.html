@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="css/m1.css">
 </head>
 <body>
+<script>
+  document.addEventListener('click', function(e) {
+    const img = document.createElement('img');
+    img.src = 'https://preview.redd.it/why-roblox-man-face-look-like-eli-vance-v0-z3m1p17h7rxc1.png?width=420&format=png&auto=webp&s=571080804dec87186545e0176a305619b453e632'; // เปลี่ยนลิงก์ภาพได้
+    img.className = 'click-image';
+    img.style.left = e.pageX + 'px'; // ลบครึ่งหนึ่งของความกว้างเพื่อให้ภาพอยู่กลางคลิก
+    img.style.top = e.pageY + 'px';  // ลบครึ่งหนึ่งของความสูง
+
+    document.body.appendChild(img);
+
+    // ลบภาพออกหลัง 1 วินาที
+    setTimeout(() => {
+      img.remove();
+    }, 1000);
+  });
+</script>
     <header class="box2">
         <div class="box3">
             <a href="https://www.youtube.com/watch?v=cHgfKWjQzGk">
