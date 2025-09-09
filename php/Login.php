@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="g16">
         <div class="g17">
             <h1 class="h9">เข้าสู่ระบบ</h1>
-            <form id="loginForm" method="POST" action="login.php">
+            <form id="loginForm" method="POST" action="Login.php">
                 <label for="username">ชื่อผู้ใช้</label>
                 <input type="text" name="username" id="username" placeholder="ชื่อผู้ใช้" required>
                 <label for="password">รหัสผ่าน</label>

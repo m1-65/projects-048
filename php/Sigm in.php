@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="g16">
         <div class="g17">
             <h1>สมัครสมาชิก</h1>
-            <form id="registerForm" method="POST" action="register.php">
+            <form id="registerForm" method="POST" action="Sigm in.php">
                 <label for="username">ชื่อผู้ใช้</label>
                 <input type="text" name="username" id="username" placeholder="ชื่อผู้ใช้" required>
                 <label for="password">รหัสผ่าน</label>
