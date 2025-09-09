@@ -1,6 +1,6 @@
 <?php
 session_start(); // Start a new session to manage user login state
-require 'users.php'; // Include the file with user data
+require 'db.php'; // Include the file with user data
 
 $error_message = ''; // Initialize error message variable
 
@@ -8,17 +8,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
 
-    // Check if the username exists and the password matches
-    if (isset($users[$username]) && $users[$username]['password'] === $password) {
-        $_SESSION['username'] = $username; // Store the username in the session
-        header('Location: home.html'); // Redirect to the home page
+    $stmt = $pdo->prepare("SELECT * FROM player WHERE username = :username");
+    $stmt->execute(['username' => $username]);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($user && $user['password'] === $password) {
+        $_SESSION['username'] = $username;
+        header('Location: index.html');
         exit;
     } else {
-        $error_message = 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง'; // Incorrect username or password
+        $error_message = 'ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง';
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
@@ -31,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="g16">
         <div class="g17">
             <h1 class="h9">เข้าสู่ระบบ</h1>
-            <form id="loginForm" method="POST" action="Login.php">
+            <form id="loginForm" method="POST" action="../Login.php">
                 <label for="username">ชื่อผู้ใช้</label>
                 <input type="text" name="username" id="username" placeholder="ชื่อผู้ใช้" required>
                 <label for="password">รหัสผ่าน</label>
